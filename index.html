@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app='service'>
+  <head>
+    <meta charset="utf-8" />
+    <title>AngularTemplate</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+  </head>
+  <body>
+    <h1>Title</h1>
+
+  <div class='navigation'>
+    <ul>
+      <li><a href='#/view1' class='index'>Tab1</a></li>
+      <li><a href='#/view2' class='create'>Tab2</a></li>
+    </ul>
+  </div>
+  <div id='container'></div>
+    <div ng-view></div>
+
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-route/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="services/service.js"></script>
+    <script src="controllers/controllers.js"></script>
+  </body>
+</html>

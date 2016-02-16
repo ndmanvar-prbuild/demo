@@ -1,0 +1,23 @@
+{
+  "name": "angularprbuild",
+  "version": "1.0.0",
+  "description": "run unit and functional tests for each Pull Request",
+  "main": "app.js",
+  "scripts": {
+    "test": "karma start karma.conf.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "angular": "^1.4.8",
+    "angular-mocks": "^1.4.8",
+    "angular-route": "^1.4.8",
+    "chai": "^3.4.1",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.15",
+    "karma-jasmine": "^0.3.6",
+    "karma-sauce-launcher": "^0.3.0",
+    "requirejs": "^2.1.22",
+    "protractor": "2.1.0"
+  }
+}
