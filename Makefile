@@ -1,3 +1,5 @@
+all: setup unit_tests functional_tests
+
 setup:
 	@echo "\n--------\nRunning setup...\n--------\n"
 	npm install
