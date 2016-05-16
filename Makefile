@@ -1,4 +1,4 @@
-all: perf_test setup unit_tests functional_tests
+all: setup unit_tests functional_tests
 
 setup:
 	@echo "\n--------\nRunning setup...\n--------\n"
@@ -11,6 +11,3 @@ unit_tests:
 functional_tests:
 	@echo "\n--------\nRunning functional_tests...\n--------\n"
 	./deploy_and_test.sh
-
-perf_test:
-	ls abc
