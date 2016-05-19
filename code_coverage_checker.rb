@@ -1,7 +1,9 @@
 # usage: $ cp -rf coverage old_coverage && ruby get_coverage.rb
 
 def get_coverage_num(coverage_dir)
-  cov_file = Dir.glob("#{coverage_dir}/**/*.txt")[0]
+  cov_files = Dir.glob("#{coverage_dir}/**/*.txt")
+  raise "#{coverage_dir} directory does not exist" if cov_files.empty?
+  cov_file = cov_files[0]
   content = File.read cov_file
   content.scan(/\: .*\%/).last.gsub(': ', '').gsub('%', '').to_f
 end
