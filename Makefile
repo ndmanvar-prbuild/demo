@@ -6,7 +6,9 @@ setup:
 
 unit_tests:
 	@echo "\n--------\nRunning unit_tests...\n--------\n"
+	@rm -rf old_coverage && cp -rf coverage old_coverage
 	./node_modules/.bin/karma start karma.conf.js
+	@ruby get_coverage.rb
 
 functional_tests:
 	@echo "\n--------\nRunning functional_tests...\n--------\n"
