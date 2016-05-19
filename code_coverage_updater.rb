@@ -2,7 +2,6 @@ if `git log -n 1`.include? 'Update coverage'
 	puts 'do not need to update coverage number'
 else
 	puts 'Updating coverage number...'
-	exec("printenv")
 	exec("git checkout master")
 	exec("git pull origin master")
 	exec("make all")
