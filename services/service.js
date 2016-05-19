@@ -15,7 +15,9 @@ app.service('service', function () {
 
 var data = [{'data1': 11, 'data2': 12}];
 
-
+if (false) {
+	console.log('this should never get hit');
+}
 
 
 
