@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 recentCommit=`git log -n 1`
 git log -n 1
