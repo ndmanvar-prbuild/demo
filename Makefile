@@ -5,6 +5,7 @@ setup:
 	npm install
 
 static_code_anlysis:
+	@echo "\n--------\nRunning JSHint...\n--------\n"
 	./node_modules/.bin/jshint controllers services views test specs *.js
 
 unit_tests:
