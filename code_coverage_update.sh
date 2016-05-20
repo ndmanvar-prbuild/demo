@@ -1,7 +1,6 @@
 #!/bin/bash
 
 recentCommit=`git log -n 1`
-git log -n 1
 
 if [[ "$recentCommit" =~ "Update coverage" ]]; then
     echo "do not need to run through tests, only code coverage num was updated"
