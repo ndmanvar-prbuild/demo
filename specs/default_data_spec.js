@@ -9,8 +9,8 @@ describe('AngularJS/Protractor Demo Tab1 default values', function() {
     var firstInput = element(by.xpath("//tr[2]//td[@class='ng-binding'][1]")),
         secondInput = element(by.xpath("//tr[2]//td[@class='ng-binding'][2]"));
 
-    expect(firstInput.getText()).toEqual('41');
-    expect(secondInput.getText()).toEqual('42');
+    expect(firstInput.getText()).toEqual('11');
+    expect(secondInput.getText()).toEqual('12');
   });
 
 });
