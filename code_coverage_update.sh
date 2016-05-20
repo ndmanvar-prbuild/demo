@@ -10,5 +10,5 @@ else
 	make all
 	git config --global user.email "ndmanvar_prbuild@yahoo.com"
 	git config --global user.name "ndmanvar-prbuild"
-	git add coverage && git commit -m 'Update coverage number' && git push
+	(git add coverage && git commit -m 'Update coverage number' && git push) || echo 'Nothing to push!'
 fi
