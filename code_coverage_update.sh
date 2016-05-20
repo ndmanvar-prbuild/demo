@@ -1,10 +1,12 @@
 #!/bin/sh
 
 recentCommit=`git log -n 1`
+git log -n 1
 
 if [[ "$recentCommit" =~ "Update coverage" ]]; then
     echo "do not need to run through tests, only code coverage num was updated"
 else
+	echo "running through tests and updating coverage numbers"
 	git checkout master
 	git pull origin master
 	make all
