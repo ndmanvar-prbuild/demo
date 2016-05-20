@@ -9,7 +9,7 @@ exports.config = {
   // restartBrowserBetweenTests: true,
 
   onPrepare: function(){
-      var caps = browser.getCapabilities()
+      var caps = browser.getCapabilities();
   },
 
   multiCapabilities: [{
@@ -41,7 +41,7 @@ exports.config = {
       browser.getSession().then(function(session) {
         console.log('SauceOnDemandSessionID=' + session.getId() + ' job-name=' + jobName);
       });
-    }
+    };
     printSessionId("Insert Job Name Here");
   }
-}
+};
