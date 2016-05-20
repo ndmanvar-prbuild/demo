@@ -13,12 +13,7 @@ app.service('service', function () {
 
 });
 
-var data = [{'data1': 11, 'data2': 12}];
-
-if (false) {
-	console.log('this will never get hit');
-}
-
+var data = [{'data1': 21, 'data2': 22}];
 
 
 
