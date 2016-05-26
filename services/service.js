@@ -13,12 +13,7 @@ app.service('service', function () {
 
 });
 
-var data = [{'data1': 31, 'data2': 32}];
-
-if (false) {
-	console.log('abc');
-}
-
+var data = [{'data1': 41, 'data2': 42}];
 
 
 
