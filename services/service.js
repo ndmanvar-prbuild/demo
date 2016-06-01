@@ -13,11 +13,6 @@ app.service('service', function () {
 
 });
 
-var data = [{'data1': 61, 'data2': 62}];
-
-if (false) {
-	console.log('garbage code');
-}
-
+var data = [{'data1': 71, 'data2': 72}];
 
 
