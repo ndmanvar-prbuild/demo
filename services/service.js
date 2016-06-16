@@ -15,4 +15,8 @@ app.service('service', function () {
 
 var data = [{'data1': 61, 'data2': 62}];
 
+if (false) {
+	console.log('this is garabe code');
+}
+
 
