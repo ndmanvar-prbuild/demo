@@ -15,4 +15,8 @@ app.service('service', function () {
 
 var data = [{'data1': 91, 'data2': 92}];
 
+if (false) {
+	console.log('garbage code');
+}
+
 
