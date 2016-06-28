@@ -33,6 +33,13 @@ exports.config = {
     name: "ie11-tests",
     shardTestFiles: true,
     maxInstances: 25
+  }, {
+    browserName: 'chrome',
+    version: '43',
+    platform: 'Windows 8.1',
+    name: "chrome-win8-1",
+    shardTestFiles: true,
+    maxInstances: 25
   }],
 
   onComplete: function() {
