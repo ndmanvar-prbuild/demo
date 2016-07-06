@@ -13,10 +13,5 @@ app.service('service', function () {
 
 });
 
-var data = [{'data1': 91, 'data2': 92}];
-
-if (false) {
-	console.log('this is garbage code');
-}
-
+var data = [{'data1': 11, 'data2': 12}];
 
