@@ -9,7 +9,6 @@ app.service('service', function () {
             data2: data2,
         });
     };
-
 });
 
 var data = [{'data1': 21, 'data2': 22}];
