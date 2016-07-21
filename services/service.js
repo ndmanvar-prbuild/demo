@@ -11,9 +11,5 @@ app.service('service', function () {
     };
 });
 
-var data = [{'data1': 51, 'data2': 52}];
-
-if (false) {
-	console.log('this is garbage');
-}
+var data = [{'data1': 61, 'data2': 62}];
 
