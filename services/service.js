@@ -11,5 +11,5 @@ app.service('service', function () {
     };
 });
 
-var data = [{'data1': 41, 'data2': 42}];
+var data = [{'data1': 51, 'data2': 52}];
 
