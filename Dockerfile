@@ -15,4 +15,6 @@ RUN npm install
 
 COPY . /usr/src/app
 
-CMD python -m SimpleHTTPServer
+EXPOSE 8000
+
+CMD ["python", "-m", "SimpleHTTPServer"]
