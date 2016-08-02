@@ -14,6 +14,7 @@ docker run -p 8000:8000 --name $NAME demo_test &
 echo "Waiting for 15 seconds to launch..."
 sleep 15
 
+
 # run tests
 echo "Running Functional Tests using Protractor"
 if ./node_modules/.bin/protractor conf.js ; then
