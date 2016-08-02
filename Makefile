@@ -17,3 +17,11 @@ unit_tests:
 functional_tests:
 	@echo "\n--------\nRunning functional_tests...\n--------\n"
 	./deploy_and_test.sh
+
+publish:
+	docker build -t ndmanvar/demo_test .
+	docker push ndmanvar/demo_test
+
+deploy:
+	ls dfj;ak
+	echo 'abc'
