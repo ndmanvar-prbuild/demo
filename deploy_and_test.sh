@@ -5,6 +5,7 @@ echo "Deploying via Docker..."
 
 NAME="docker_name"
 # builds
+echo "Building docker images: demo_test ..."
 docker rm $NAME || echo "No name by image exists! Moving on..."
 docker build -t demo_test .
 
