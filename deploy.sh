@@ -14,5 +14,5 @@ docker pull $IMAGE
 docker build -t $IMAGE .
 docker run -p 8000:8000 --name $NAME $IMAGE &
 
-echo "Waiting for 15 seconds to launch..."
-sleep 15
+echo "Waiting for 25 seconds to launch..."
+sleep 25
