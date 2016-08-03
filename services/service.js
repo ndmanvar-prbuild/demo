@@ -12,3 +12,4 @@ app.service('service', function () {
 });
 
 var data = [{'data1': 71, 'data2': 72}];
+
