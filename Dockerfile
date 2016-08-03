@@ -1,4 +1,4 @@
-FROM node:0.12.15-wheezy
+FROM node:0.12.15-slim
 
 RUN \
   apt-get update && \
