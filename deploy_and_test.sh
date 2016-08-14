@@ -7,11 +7,11 @@ NAME=docker_name
 IMAGE=demo_test
 
 # build
-echo "Building docker images: demo_test ..."
+echo "\nBuilding docker image: $IMAGE and deploying with name: $NAME...\n"
 ./deploy.sh $IMAGE $NAME
 
 # run tests
-echo "Running Functional Tests using Protractor"
+echo "\nRunning Functional Tests using Protractor\n"
 if ./node_modules/.bin/protractor conf.js ; then
 	# shut down server
 	docker stop $NAME
