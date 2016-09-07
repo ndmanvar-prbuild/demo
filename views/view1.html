@@ -1,29 +1,36 @@
 <div>
-    <div class="container">
-        <header>
-            <h3>View 1</h3>
-        </header>
-        <div class="row">
-            <div class=>
-                Data1:
-                <br />
-                <input ng-model="newData.data1" type="text" id="input1" placeholder="Data1">
-            </div>
-            <div>
-                Data2:
-                <br />
-                <input ng-model="newData.data2" type="text" id="input2" placeholder="Data2">
-            </div>
-            <div class="span6">
-                <button id="submitData" class="btn btn-primary" id="button" type="button" 
-                    ng-disabled="!newData.data1 || !newData.data2"
-                    ng-click="insertData()">Add Data</button>
-            </div>
-        </div>
-        <br /><br />
-        <table>
-            <tr><th>Data1</th><th>Data2</th></tr>
-          <tr ng-repeat="item in data"><td>{{ item.data1 }}</td><td>{{ item.data2 }}</td>
-        </table>
-    </div>
+   <div class="container">
+      <header>
+         <h3>View 1</h3>
+      </header>
+      <div class="row">
+         <div class=>
+            Data1:
+            <br />
+            <input ng-model="newData.data1" type="text" id="input1" placeholder="Data1">
+         </div>
+         <div>
+            Data2:
+            <br />
+            <input ng-model="newData.data2" type="text" id="input2" placeholder="Data2">
+         </div>
+         <div class="span6">
+            <button id="submitData" class="btn btn-primary" id="button" type="button"
+               ng-disabled="!newData.data1 || !newData.data2"
+               ng-click="insertData()">Add Data</button>
+            <button id="submitData-todo" class="btn btn-primary-todo" id="button-todo" type="button"
+                ng-click="removeData()">Remove Data</button>
+         </div>
+      </div>
+      <br /><br />
+      <table>
+         <tr>
+            <th>Data1</th>
+            <th>Data2</th>
+         </tr>
+         <tr ng-repeat="item in data">
+            <td>{{ item.data1 }}</td>
+            <td>{{ item.data2 }}</td>
+      </table>
+   </div>
 </div>
