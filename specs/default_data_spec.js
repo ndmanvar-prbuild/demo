@@ -11,6 +11,7 @@ describe('AngularJS/Protractor Demo Tab1 default values', function() {
 
     expect(firstInput.getText()).toEqual('21');
     expect(secondInput.getText()).toEqual('22');
+
   });
 
 });
