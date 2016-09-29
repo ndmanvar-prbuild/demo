@@ -14,6 +14,10 @@ app.controller('controller', function ($scope, service) {
         $scope.newData.data1 = '';
         $scope.newData.data2 = '';
     };
-    
+
+    $scope.removeData = function () {
+        service.removeLastData();
+    };
+
     $scope.data = data;
 });
