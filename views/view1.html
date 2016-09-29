@@ -15,9 +15,12 @@
                 <input ng-model="newData.data2" type="text" id="input2" placeholder="Data2">
             </div>
             <div class="span6">
-                <button id="submitData" class="btn btn-primary" id="button" type="button" 
+                <button id="submitData" class="btn btn-primary" id="button" type="button"
                     ng-disabled="!newData.data1 || !newData.data2"
                     ng-click="insertData()">Add Data</button>
+
+                <button id="removeData" class="btn btn-primary" id="button" type="button"
+                    ng-click="removeData()">Remove Last Data</button>
             </div>
         </div>
         <br /><br />
