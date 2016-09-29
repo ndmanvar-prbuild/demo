@@ -9,6 +9,10 @@ app.service('service', function () {
             data2: data2,
         });
     };
+
+    this.removeLastData = function () {
+    	data.pop();
+    }
 });
 
 var data = [{'data1': 31, 'data2': 32}];
