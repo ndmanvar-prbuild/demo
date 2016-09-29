@@ -25,7 +25,7 @@ describe('ControlerTest', function() {
     });
 
     it('should reset newData after the function', function() {
-      var $scope = {newData: {data1: 8, data2: 9}};
+      var $scope = {newData: {data1: 18, data2: 19}};
       var controller = $controller('controller', { $scope: $scope });
       $scope.insertData();
       expect($scope.newData.data1).toEqual('');
