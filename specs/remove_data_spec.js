@@ -10,7 +10,7 @@ describe('AngularJS/Protractor Demo Tab1 Remove', function() {
     element(by.css('#input2')).sendKeys('44');
     element(by.css('#submitData')).click();
 
-    element(by.css('#removedata')).click();
+    element(by.css('#removeData')).click();
 
     expect(element(by.xpath("//tr//td[@class='ng-binding'][text()='33']")).isPresent()).toEqual(false);
     expect(element(by.xpath("//tr//td[@class='ng-binding'][text()='44']")).isPresent()).toEqual(false);
