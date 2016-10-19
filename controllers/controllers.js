@@ -17,8 +17,7 @@ app.controller('controller', function ($scope, service) {
 
     $scope.removeData = function () {
         service.removeLastData();
-
-    }
+    };
 
     $scope.data = data;
 });
