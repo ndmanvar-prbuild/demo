@@ -24,6 +24,12 @@ describe('ControlerTest', function() {
       expect($scope.data[1].data1).toEqual(8);
     });
 
+    it('should remove data', function () {
+      var $scope = {};
+      var controller = $controller('controller', { $scope: $scope });
+      $scope.removeData();
+      expect($scope.data).toEqual([ {data1: 31, data2: 32} ]);
+    });
 
     it('should reset newData after the function', function() {
       var $scope = {newData: {data1: 18, data2: 19}};
