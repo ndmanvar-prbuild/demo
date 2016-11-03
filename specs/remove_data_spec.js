@@ -12,8 +12,8 @@ describe('AngularJS/Protractor Demo Tab1 new', function() {
 
     element(by.css('#removeData')).click();
 
-    expect(element(by.xpath("//tr//td[@class='ng-binding'][text()='33']"))).toEqual(false);
-    expect(element(by.xpath("//tr//td[@class='ng-binding'][text()='45']"))).toEqual(false);
+    expect(element(by.xpath("//tr//td[@class='ng-binding'][text()='33']")).isPresent()).toEqual(false);
+    expect(element(by.xpath("//tr//td[@class='ng-binding'][text()='44']")).isPresent()).toEqual(false);
   });
 
 });
