@@ -13,7 +13,6 @@ app.service('service', function () {
     this.removeLastData = function () {
     	data.pop();
     };
-
 });
 
 var data = [{'data1': 31, 'data2': 32}];
