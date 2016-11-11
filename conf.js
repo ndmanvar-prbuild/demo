@@ -40,13 +40,6 @@ exports.config = {
     name: "chrome-win8-1",
     shardTestFiles: true,
     maxInstances: 25
-  }, {
-    browserName: 'safari',
-    version: 'latest',
-    platform: 'OS X 10.11',
-    name: "osx10-11-1",
-    shardTestFiles: true,
-    maxInstances: 25
   }],
 
   onComplete: function() {
