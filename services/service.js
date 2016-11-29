@@ -10,10 +10,6 @@ app.service('service', function () {
         });
     };
 
-    this.removeLastData = function () {
-        data.pop();
-    };
-
 });
 
 var data = [{'data1': 41, 'data2': 42}];
