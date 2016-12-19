@@ -8,10 +8,12 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "angular": "1.4.8",
     "angular-mocks": "1.4.8",
-    "angular-route": "1.4.8",
+    "angular-route": "1.4.8"
+  },
+  "devDependencies": {
     "chai": "3.4.1",
     "jasmine-core": "2.4.1",
     "karma": "0.13.19",
