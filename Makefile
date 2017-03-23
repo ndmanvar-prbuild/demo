@@ -19,6 +19,6 @@ functional_tests:
 	./deploy_and_test.sh
 
 publish:
-	docker build -t ndmanvar/demo_test .
-	docker push ndmanvar/demo_test
-	docker rmi ndmanvar/demo_test
+	docker build -t saucetraining/demo_test .
+	docker push saucetraining/demo_test
+	docker rmi saucetraining/demo_test
