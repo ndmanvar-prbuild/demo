@@ -1,5 +1,4 @@
-﻿
-app.controller('controller', function ($scope, service) {
+﻿app.controller('controller', function ($scope, service) {
 
     init();
 
@@ -13,6 +12,10 @@ app.controller('controller', function ($scope, service) {
         service.addData(data1, data2);
         $scope.newData.data1 = '';
         $scope.newData.data2 = '';
+    };
+
+    $scope.removeData = function () {
+        service.removeLastData();
     };
 
     $scope.data = data;
