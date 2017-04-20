@@ -19,7 +19,6 @@ functional_tests:
 	./deploy_and_test.sh
 	@echo "Running functional tests mandator/checker"
 	@ruby check_if_func_test_needed.rb
-	git diff --name-only origin/master
 
 
 publish:
