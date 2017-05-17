@@ -14,5 +14,10 @@
         $scope.newData.data2 = '';
     };
 
+    $scope.removeData = function () {
+        service.removeLastData();
+
+    };
+
     $scope.data = data;
 });
